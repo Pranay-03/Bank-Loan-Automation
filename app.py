@@ -156,7 +156,7 @@ def predict():
             }
 
             # print(data)
-            response = requests.post('https://script.google.com/macros/s/AKfycbzzCfiQRqdSQicg-Q_2VretPhkitaA59loqYsWeaYIQzMAiQ-QD6ZV8t_mMvK_wq6lLrA/exec',data=data)
+            response = requests.post('https://.google.com',data=data)
 
             # Store the data in the database
             save_loan_application(application_number, name, email, gender, married, dependents, education, self_employed, applicant_income, coapplicant_income, loan_amount, loan_term, credit_history, property_area)
